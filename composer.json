@@ -1,0 +1,7 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "firebase/php-jwt": "^6.1",
+        "laminas/laminas-config": "^3.7"
+    }
+}
