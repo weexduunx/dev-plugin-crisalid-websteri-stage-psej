@@ -1,5 +1,5 @@
 <?php
- include 'requete.php';
+ include 'requete-article.php';
 ?>
 
 <!DOCTYPE html>
@@ -31,12 +31,16 @@
    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
    <!-- Materialize CSS -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=fr">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Theme CSS Material -->
     <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css"> -->
     <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.lime-light_green.min.css" /> -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-purple.min.css" />
+    <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-purple.min.css" /> -->
+    <!-- Theme CSS Material -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="theme/purple-pink.css">
+
     <style>
         #view-source {
         position: fixed;
@@ -91,6 +95,7 @@
                     <div class="mdl-card mdl-cell mdl-cell--12-col">
                     <h4 class="mdl-cell mdl-cell--12-col">Liste des familles</h4>
                         <?php
+                            require 'requete-famille.php';
                             include 'flux_familles.php';
                         ?>                             
                     </div>
@@ -101,7 +106,7 @@
     </div>
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="mdl/material.min.js"></script>
   </body>
 </html>
 
